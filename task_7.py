@@ -16,33 +16,8 @@ def digit_root(num):
             num = num % pow(10,i)
         num = sum
     print(num)
+    return num
 
 digit_root(4851)
 digit_root(97569)
 digit_root(889987)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-mnemo = ['каждый', 'охотник', 'желает', 'знать', 'где', 'сидит', 'фазан']
-
-colors = ['оранжевый', 'голубой', 'фиолетовый', 'красный', 'желтый', 'синий', 'зеленый']
-
-rainbow_dict = {} # создай словарь rainbow_dict
-
-for mn in mnemo:
-    for color in colors:
-        if mn[0] == color[0]:
-            rainbow_dict[mn] = color

@@ -14,7 +14,7 @@ tickets = {
     5: ['E2E_2', 'API_61']
 }
 
-def delete_duplikate(dict):
+def delete_duplicates(dict):
     for i in range(1, len(tickets)+1):
         for task in tickets[i]:
      #   print(task + ' ')
@@ -23,7 +23,7 @@ def delete_duplikate(dict):
      #           print(task_s)
                     if task_s == task:
                         tickets[l].remove(task_s)
-delete_duplikate(tickets)
+delete_duplicates(tickets)
 #print(tickets)
 
 tickets_by_type = {}
